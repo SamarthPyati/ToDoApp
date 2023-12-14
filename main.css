@@ -314,3 +314,73 @@ input:checked~.bubble::after {
 	text-decoration: line-through;
 	color: var(--grey);
 }
+
+/* about page */
+.about #heading,
+.about h3 {
+	background-color: var(--primary);
+	color: #fff;
+	padding: 0.5em;
+	border-radius: 0.25em;
+	margin-bottom: 1rem;
+	box-shadow: var(--shadow);
+	transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.about #heading:hover,
+.about h3:hover {
+	background-color: #dd2929c6;
+	/* Adjust the hover color as needed */
+	color: #fff;
+	transform: scale(1.05) translateX(40px);
+}
+
+.about p {
+	color: var(--dark);
+	font-size: 1.125rem;
+	margin-bottom: 1.5rem;
+	line-height: 1.6;
+	padding: 1em;
+	border: 1px solid var(--light);
+	border-radius: 0.25em;
+	box-shadow: var(--shadow);
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about p:hover {
+	transform: scale(1.02);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about ul li {
+	margin-bottom: 1rem;
+	padding: 1em;
+	border: 1px solid var(--light);
+	border-radius: 0.25em;
+	box-shadow: var(--shadow);
+	transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+/* Add hover effect to list items */
+.about ul li:hover {
+	background-color: var(--light);
+	color: var(--primary);
+	transform: scale(1.02) translateX(20px);
+}
+
+.icons {
+	padding: 10px;
+	display: block;
+}
+
+.icons i {
+	margin-right: 5px;
+	transition: transform 0.3s, color 0.3s;
+}
+
+/* Add hover effect to icons */
+.icons i:hover {
+	color: #dd2929c6;
+	/* Adjust the hover color as needed */
+	transform: scale(1.2) rotate(30deg);
+}

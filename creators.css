@@ -27,7 +27,15 @@ header {
     text-align: center;
 }
 
+main h2 {
+    text-align: center;
+    font-family: 'montserrat', sans-serif;
+    margin: 20px;
+    text-decoration: underline;
+}
+
 header h1 {
+    font-family: 'montserrat', sans-serif;
     font-weight: 700;
     text-align: center;
     font-size: 4em;
@@ -47,6 +55,7 @@ header .navbar {
     color: aliceblue;
     font-weight: 700;
     text-transform: uppercase;
+
     background-color: var(--primary);
     box-shadow: var(--personal-glow);
     border-radius: 0.5rem;
@@ -92,12 +101,12 @@ header .content a:hover {
 /* Creators Page Styling */
 
 main {
-    margin-top: 2rem;
+    /* margin-top: 2rem;
     margin-bottom: 2rem;
     padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-right: 1.5rem; */
     text-align: center;
-    max-width: 1300px;
+    /* max-width: 1300px; */
 }
 
 h2 {
@@ -110,14 +119,14 @@ h2 {
 .creators-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    /* Allow items to wrap to the next line */
+    flex-direction: row;
+    /* flex-wrap: wrap; */
 }
 
 .creator {
-    width: 48%;
+    width: 40%;
     /* Adjust the width as needed */
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     overflow: hidden;
     box-shadow: var(--shadow);
     border-radius: 0.5rem;
@@ -156,11 +165,26 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
+.creator h3 {
+    text-align: center;
+    text-decoration: underline;
+}
+
 .creator p {
     color: var(--grey);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    margin-bottom: 1rem;
+    margin: 1rem;
+}
+
+.creator:hover {
+    animation: glow 2.5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes glow {
+    50% {
+        box-shadow: 0px 0px 50px rgb(232, 108, 239);
+    }
 }
 
 .social-media {
