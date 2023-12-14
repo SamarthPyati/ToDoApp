@@ -384,3 +384,7 @@ input:checked~.bubble::after {
 	/* Adjust the hover color as needed */
 	transform: scale(1.2) rotate(30deg);
 }
+
+footer p {
+	text-align: center;
+}
